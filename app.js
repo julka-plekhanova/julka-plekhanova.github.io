@@ -15,14 +15,15 @@ let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 
 btn1.onClick(function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
-	}
-	else {
-		tg.MainButton.setText("Вы выбрали кота1!");
-		item = "1";
-		tg.MainButton.show();
-	}
+    tg.showAlert(`Добро пожаловать, @${tg.initDataUnsafe.user.first_name}.`);
+//	if (tg.MainButton.isVisible) {
+//		tg.MainButton.hide();
+//	}
+//	else {
+//		tg.MainButton.setText("Вы выбрали кота1!");
+//		item = "1";
+//		tg.MainButton.show();
+//	}
 });
 
 btn2.onClick(function(){
