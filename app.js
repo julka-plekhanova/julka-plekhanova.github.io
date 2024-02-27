@@ -17,7 +17,9 @@ let btn1 = document.getElementById("btn1");
 //let btn2 = document.getElementById("btn2");
 
 
-btn1.addEventListener('onClick', function(){
+//btn1.addEventListener('onClick', function(){
+btn1.onClick = function(){
+    tg.showAlert(`Добро пожаловать`);
 	if (tg.MainButton.isVisible){
 		tg.MainButton.hide();
 	}
@@ -26,7 +28,8 @@ btn1.addEventListener('onClick', function(){
 //		item = "1";
 		tg.MainButton.show();
 	}
-});
+};
+//});
 
 btn2.onClick(function(){
 	if (tg.MainButton.isVisible) {
