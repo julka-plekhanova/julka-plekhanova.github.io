@@ -1,16 +1,16 @@
 let tg = window.Telegram.WebApp;
-var MainButton = tg.MainButton;
-var BackButton = tg.BackButton;
-
-//MainButton.show();
-BackButton.show();
-tg.expand();
-//var WebApp = window.Telegram.WebApp;
-
-tg.showAlert(`Добро пожаловать, @${tg.initDataUnsafe.user.first_name}.`);
+let MainButton = tg.MainButton;
+let BackButton = tg.BackButton;
 
 MainButton.textColor = '#FFFFFF';
 MainButton.color = '#00FF00';
+MainButton.show();
+BackButton.show();
+tg.expand();
+
+//tg.showAlert(`Добро пожаловать, @${tg.initDataUnsafe.user.first_name}.`);
+
+
 
 let item = "";
 
