@@ -14,7 +14,7 @@ let item = "";
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 
-btn1.addEventListener("click", function(){
+btn1.onClick(function(){
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
@@ -25,7 +25,7 @@ btn1.addEventListener("click", function(){
 	}
 });
 
-btn2.addEventListener("click", function(){
+btn2.onClick(function(){
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
@@ -36,6 +36,6 @@ btn2.addEventListener("click", function(){
 	}
 });
 
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
+tg.MainButton.onClick(function(){
 	tg.sendData(item);
 });
