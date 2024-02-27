@@ -17,12 +17,12 @@ let btn1 = document.getElementById("btn1");
 //let btn2 = document.getElementById("btn2");
 
 btn1.addEventListener('click', function(){
-	if (tg.MainButton.isVisible) {
+	if (tg.MainButton.isVisible){
 		tg.MainButton.hide();
 	}
-	else {
-		tg.MainButton.setText("Вы выбрали кота1!");
-		item = "1";
+	else{
+//		tg.MainButton.setText("Вы выбрали кота1!");
+//		item = "1";
 		tg.MainButton.show();
 	}
 });
