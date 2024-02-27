@@ -13,7 +13,7 @@ tg.expand();
 
 let item = "";
 
-tg.showAlert(`v5`);
+tg.showAlert(`v6`);
 
 let btn1 = document.getElementById(`baton`);
 btn1.onclick = function()
