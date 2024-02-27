@@ -13,12 +13,12 @@ tg.expand();
 
 let item = "";
 
-tg.showAlert('v3');
+tg.showAlert(`v4`);
 
-let btn1 = document.getElementById('btn1');
+let btn1 = document.getElementById(`btn1`);
 btn1.onclick = function()
 {
-   alert('you clicked me');
+   alert(`you clicked me`);
 }
 //let btn2 = document.getElementById("btn2");
 
