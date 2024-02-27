@@ -16,7 +16,8 @@ let item = "";
 let btn1 = document.getElementById("btn1");
 //let btn2 = document.getElementById("btn2");
 
-btn1.addEventListener('click', function(){
+
+btn1.addEventListener('onClick', function(){
 	if (tg.MainButton.isVisible){
 		tg.MainButton.hide();
 	}
