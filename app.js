@@ -5,10 +5,14 @@ tg.MainButton.color = '#00FF00';
 
 tg.expand();
 
-tg.MainButton.onClick(function(){
-    tg.showAlert(`Добро пожаловать`);
-//    , @${tg.initDataUnsafe.user.first_name}.`);
-//	tg.sendData(item);
+//tg.MainButton.onClick(function(){
+//    tg.showAlert(`Добро пожаловать`);
+////    , @${tg.initDataUnsafe.user.first_name}.`);
+////	tg.sendData(item);
+//});
+
+tg.onEvent('mainButtonClicked', function(){
+	tg.showAlert(`Добро пожаловать`);
 });
 tg.MainButton.show();
 
