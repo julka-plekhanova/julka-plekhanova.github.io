@@ -1,9 +1,9 @@
 let tg = window.Telegram.WebApp;
 
-tg.MainButton.textColor = '#FFFFFF';
-tg.MainButton.color = '#2CAB37';
-tg.MainButton.show();
-tg.expand();
+//tg.MainButton.textColor = '#FFFFFF';
+//tg.MainButton.color = '#2CAB37';
+//tg.MainButton.show();
+//tg.expand();
 
 //tg.MainButton.onClick(function(){
 //    tg.showAlert(`Добро пожаловать`);
@@ -13,12 +13,12 @@ tg.expand();
 
 let item = "";
 
-tg.showAlert('v8');
+tg.showAlert('v10');
 
-let b1 = document.getElementById('baton');
-b1.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-	tg.MainButton.color = '#000000';
-	//alert('you clicked me');
+let btn1 = document.getElementById('btn1');
+bnt1.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+	//tg.MainButton.color = '#000000';
+	alert('you clicked me');
 });
 //let btn2 = document.getElementById("btn2");
 
