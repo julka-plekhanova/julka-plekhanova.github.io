@@ -14,33 +14,26 @@ tg.expand();
 let item = "";
 
 let btn1 = document.getElementById("btn1");
+tg.showAlert(`btn1=`+btn1);
 //let btn2 = document.getElementById("btn2");
 
 
-//btn1.addEventListener('onClick', function(){
-btn1.onClick = function(){
-    tg.showAlert(`Добро пожаловать`);
-	if (tg.MainButton.isVisible){
-		tg.MainButton.hide();
-	}
-	else{
-//		tg.MainButton.setText("Вы выбрали кота1!");
-//		item = "1";
-		tg.MainButton.show();
-	}
-};
-//});
 
-btn2.onClick(function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
-	}
-	else {
-		tg.MainButton.setText("Вы выбрали кота2!");
-		item = "2";
-		tg.MainButton.show();
-	}
-});
+
+//btn1.addEventListener('onClick', function(){
+//btn1.onclick = btn1OnClick;
+////});
+//
+//btn2.onClick(function(){
+//	if (tg.MainButton.isVisible) {
+//		tg.MainButton.hide();
+//	}
+//	else {
+//		tg.MainButton.setText("Вы выбрали кота2!");
+//		item = "2";
+//		tg.MainButton.show();
+//	}
+//});
 
 tg.onEvent('mainButtonClicked', function(){
 //	tg.showAlert(`Добро пожаловать`);
