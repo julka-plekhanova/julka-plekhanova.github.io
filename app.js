@@ -13,10 +13,10 @@ let tg = window.Telegram.WebApp;
 
 let item = "";
 
-tg.showAlert('v10');
+tg.showAlert('v11');
 
 let btn1 = document.getElementById('btn1');
-bnt1.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+btn1.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
 	//tg.MainButton.color = '#000000';
 	alert('you clicked me');
 });
