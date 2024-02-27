@@ -13,9 +13,9 @@ tg.expand();
 
 let item = "";
 
-tg.showAlert(`v4`);
+tg.showAlert(`v5`);
 
-let btn1 = document.getElementById(`btn1`);
+let btn1 = document.getElementById(`baton`);
 btn1.onclick = function()
 {
    alert(`you clicked me`);
