@@ -1,10 +1,13 @@
-from aiogram.types import WebAppInfo, ReplyKeyboardMarkup, KeyboardButton
+from aiogram.types import WebAppInfo, ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardButton, InlineKeyboardMarkup
 
-web_app = WebAppInfo(url='site_url')
-register_keyboard = ReplyKeyboardMarkup(keyboard=[
+web_app = WebAppInfo(url='https://julka-plekhanova.github.io/')
+register_keyboard = InlineKeyboardMarkup(inline_keyboard=[
     [
-        KeyboardButton(
+        InlineKeyboardButton(
             text='Посмотреть котов!', web_app=web_app
         )
     ]
-], resize_keyboard=True, one_time_keyboard=True, input_field_placeholder='Для продолжения нажмите кнопку ниже')
+])
+# , resize_keyboard=True)
+# , one_time_keyboard=True)
+# , input_field_placeholder='Для продолжения нажмите кнопку ниже')
