@@ -13,6 +13,8 @@ tg.expand();
 
 let item = "";
 
+tg.showAlert(`start`);
+
 let btn1 = document.getElementById("btn1");
 tg.showAlert(`btn1=`+btn1);
 //let btn2 = document.getElementById("btn2");
