@@ -38,5 +38,7 @@ btn2.onClick(function(){
 });
 
 tg.MainButton.onClick(function(){
-	tg.sendData(item);
+    tg.showAlert(`Добро пожаловать`);
+//    , @${tg.initDataUnsafe.user.first_name}.`);
+//	tg.sendData(item);
 });
