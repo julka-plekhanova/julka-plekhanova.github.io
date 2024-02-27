@@ -13,13 +13,12 @@ tg.expand();
 
 let item = "";
 
-tg.showAlert(`v6`);
+tg.showAlert('v7');
 
-let btn1 = document.getElementById(`baton`);
-btn1.onclick = function()
-{
-   alert(`you clicked me`);
-}
+let b1 = document.getElementById('baton');
+b1.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+	alert('you clicked me');
+});
 //let btn2 = document.getElementById("btn2");
 
 
@@ -40,10 +39,10 @@ btn1.onclick = function()
 //	}
 //});
 
-tg.onEvent('mainButtonClicked', function(){
-//	tg.showAlert(`Добро пожаловать`);
-    tg.sendData(item);
-});
+//tg.onEvent('mainButtonClicked', function(){
+////	tg.showAlert(`Добро пожаловать`);
+//    tg.sendData(item);
+//});
 
 
 
