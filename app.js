@@ -4,7 +4,7 @@ tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#00FF00';
 
 tg.expand();
-
+tg.MainButton.show();
 //tg.showAlert(`Добро пожаловать, @${tg.initDataUnsafe.user.first_name}.`);
 
 
