@@ -1,37 +1,41 @@
 let tg = window.Telegram.WebApp;
+var MainButton = tg.MainButton;
+var BackButton = tg.BackButton;
 
+//MainButton.show();
+BackButton.show();
 tg.expand();
 //var WebApp = window.Telegram.WebApp;
 
 tg.showAlert(`Добро пожаловать, @${tg.initDataUnsafe.user.first_name}.`);
 
-tg.MainButton.textColor = '#FFFFFF';
-tg.MainButton.color = '#2cab37';
+MainButton.textColor = '#FFFFFF';
+MainButton.color = '#2cab37';
 
 let item = "";
 
-let btn1 = document.getElementById("Кот1");
-let btn2 = document.getElementById("Кот2");
+let btn1 = document.getElementById("btn1");
+let btn2 = document.getElementById("btn2");
 
 btn1.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
+	if (MainButton.isVisible) {
+		MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали кота1!");
+		MainButton.setText("Вы выбрали кота1!");
 		item = "1";
-		tg.MainButton.show();
+		MainButton.show();
 	}
 });
 
 btn2.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
+	if (MainButton.isVisible) {
+		MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали кота2!");
+		MainButton.setText("Вы выбрали кота2!");
 		item = "2";
-		tg.MainButton.show();
+		MainButton.show();
 	}
 });
 
