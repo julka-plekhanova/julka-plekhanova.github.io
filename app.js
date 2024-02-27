@@ -5,6 +5,13 @@ tg.MainButton.color = '#00FF00';
 
 tg.expand();
 
+tg.MainButton.onClick(function(){
+    tg.showAlert(`Добро пожаловать`);
+//    , @${tg.initDataUnsafe.user.first_name}.`);
+//	tg.sendData(item);
+});
+tg.MainButton.show();
+
 //tg.showAlert(`Добро пожаловать, @${tg.initDataUnsafe.user.first_name}.`);
 
 
@@ -37,9 +44,3 @@ btn2.onClick(function(){
 	}
 });
 
-tg.MainButton.onClick(function(){
-    tg.showAlert(`Добро пожаловать`);
-//    , @${tg.initDataUnsafe.user.first_name}.`);
-//	tg.sendData(item);
-});
-tg.MainButton.show();
