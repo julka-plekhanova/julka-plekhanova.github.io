@@ -10,7 +10,7 @@ tg.expand();
 tg.showAlert(`Добро пожаловать, @${tg.initDataUnsafe.user.first_name}.`);
 
 MainButton.textColor = '#FFFFFF';
-MainButton.color = '#2cab37';
+MainButton.color = '#00FF00';
 
 let item = "";
 
