@@ -13,7 +13,7 @@ tg.expand();
 
 let item = "";
 
-tg.showAlert('v7');
+//tg.showAlert('v7');
 
 let b1 = document.getElementById('baton');
 b1.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
