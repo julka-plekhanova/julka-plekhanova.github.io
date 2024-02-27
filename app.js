@@ -2,7 +2,7 @@ let tg = window.Telegram.WebApp;
 
 tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2CAB37';
-
+tg.MainButton.show();
 tg.expand();
 
 //tg.MainButton.onClick(function(){
@@ -13,11 +13,12 @@ tg.expand();
 
 let item = "";
 
-//tg.showAlert('v7');
+tg.showAlert('v8');
 
 let b1 = document.getElementById('baton');
 b1.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-	alert('you clicked me');
+	tg.MainButton.color = '#000000';
+	//alert('you clicked me');
 });
 //let btn2 = document.getElementById("btn2");
 
